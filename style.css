@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
 * {
   margin: 0;
@@ -58,6 +59,58 @@ ul.menu li a span::after {
 }
 ul.account li:last-child a {
   border: solid 2px #79717a;
-  border-radius: 17px;
-  padding: 8px 25px;
+  border-radius: 1.0625rem;
+  padding: 0.2rem 1.5625rem;
+}
+
+ul.account li:last-child a:hover {
+  border: #000;
+  background: #000;
+  color: #fff;
+}
+
+.home-centro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.home-centro h1 {
+  font-family: "Josefin sans", sans-serif;
+  font-size: 4.375rem;
+  line-height: 3.75rem;
+  margin-bottom: 0.625rem;
+}
+
+.home-centro p {
+  width: 25rem;
+  font-size: 1.1rem;
+  font-family: "Nunito", sans-serif;
+  color: #4b4952;
+  margin-bottom: 1.85rem;
+}
+
+.home-centro a {
+  font-size: 1.1rem;
+  font-family: "Nunito", sans-serif;
+  color: #fff;
+  background: #000;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
+.home-centro a:hover {
+  background: none;
+  border: solid 2px #000;
+  color: #000;
+}
+
+.client {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.125rem;
+  position: relative;
+  bottom: 20px;
 }
