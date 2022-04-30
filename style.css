@@ -430,9 +430,9 @@ button.fechar {
     display: none;
     background: #e4f2e7;
     width: 260px;
+    height: 850px;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 100vh;
     position: absolute;
     right: -20px;
     top: -30px;
