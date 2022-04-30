@@ -15,6 +15,10 @@ a {
   text-decoration: none;
 }
 
+html,
+body {
+  height: 100%;
+}
 .container {
   max-width: 1220px;
   margin: 0 auto;
@@ -430,7 +434,7 @@ button.fechar {
     display: none;
     background: #e4f2e7;
     width: 260px;
-    height: 200vh;
+    height: 100%;
     flex-wrap: wrap;
     flex-direction: column;
     position: absolute;
