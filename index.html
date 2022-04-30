@@ -8,14 +8,114 @@
     <title>Document</title>
   </head>
   <body>
-    <section>
-      <header>
-        <nav>
-          <img src="./images/logo.svg" alt="snap" />
-        </nav>
-        <div></div>
-      </header>
+    <section class="container">
+      <div class="nav">
+        <img src="./images/logo.svg" alt="" />
+        <span class="btn-menu" data-menu="button"></span>
+        <ul class="menu list" data-menu="list">
+          <li data-dropdown-menu class="arrow">
+            <a href="#">Features<span></span></a>
+            <ul class="dropdown" data-dropdown>
+              <li>
+                <img src="./images/icon-todo.svg" /><a href="#">Todo List</a>
+              </li>
+              <li>
+                <img src="./images/icon-calendar.svg" /><a href="#">Calender</a>
+              </li>
+              <li>
+                <img src="./images/icon-reminders.svg" /><a href="#"
+                  >Reminders</a
+                >
+              </li>
+              <li>
+                <img src="./images/icon-planning.svg" /><a href="#">Planning</a>
+              </li>
+            </ul>
+          </li>
+          <li data-dropdown-menu class="arrow">
+            <a href="#">Company<span></span></a>
+            <ul class="dropdown modDropdown">
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
+            </ul>
+          </li>
+          <li><a href="#careers">Careers</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+        <ul class="account">
+          <li><a data-modal="abrir-login" href="#login">Login</a></li>
+          <li><a data-modal="abrir-register" href="#register">Register</a></li>
+        </ul>
+      </div>
     </section>
+
+    <section class="container">
+      <div class="home-centro">
+        <div>
+          <h1>Make <br />remote work</h1>
+          <p>
+            Get your team in syncn, no matter your location.<br />Streamline
+            processes, create team rituals, and watch productivity.
+          </p>
+          <a href="#learnmore">Learn more</a>
+        </div>
+
+        <img src="./images/image-hero-desktop.png" alt="" width="500px" />
+      </div>
+      <div class="imglist">
+        <ul class="client">
+          <li><img src="./images/client-databiz.svg" alt="" /></li>
+          <li><img src="./images/client-audiophile.svg" alt="" /></li>
+          <li><img src="./images/client-meet.svg" alt="" /></li>
+          <li><img src="./images/client-maker.svg" alt="" /></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="modal-login" data-modal="login">
+      <div class="baseModal">
+        <button class="fechar" data-modal="fechar">X</button>
+        <form action="">
+          <div class="login ativo" id="login">
+            <h1>Faça seu Login</h1>
+            <input type="text" id="email" placeholder="Digite seu E-mail" />
+            <input
+              type="password"
+              id="senha-login"
+              placeholder="Digite sua Senha"
+            />
+            <button class="btn-logar" type="submit">Logar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="modal-register" data-modal="register">
+      <div class="">
+        <form action="">
+          <button class="fechar" data-modal="Fechar">X</button>
+          <div class="register" id="register">
+            <h1>Faça seu registro</h1>
+            <input type="text" id="email" placeholder="Digite seu E-mail" />
+
+            <input
+              type="password"
+              id="senha-register"
+              placeholder="Digite sua senha"
+            />
+
+            <input
+              type="password"
+              id="confirm-senha"
+              placeholder="Confirme sua senha"
+            />
+            <button type="submit" class="btn-register">Registrer</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
     <script src="script.js"></script>
   </body>
 </html>
