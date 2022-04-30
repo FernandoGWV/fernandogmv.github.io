@@ -120,7 +120,6 @@ class menuMobile {
     this.openMenu = this.openMenu.bind(this);
   }
   openMenu(event) {
-    event.preventDefault();
     this.menuList.classList.add("ativo");
     this.menuButton.classList.add("ativo");
     outsideClick(this.menuList, this.events, () => {
